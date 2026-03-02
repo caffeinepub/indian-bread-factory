@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* Warm Bakery Palette — OKLCH raw L C H values */
+    /* Cream/off-white background */
+    --background: 0.975 0.012 85;
+    --foreground: 0.22 0.04 55;
+
+    /* Cards: slightly warmer cream */
+    --card: 0.985 0.008 80;
+    --card-foreground: 0.22 0.04 55;
+
+    --popover: 0.985 0.008 80;
+    --popover-foreground: 0.22 0.04 55;
+
+    /* Primary: deep warm brown */
+    --primary: 0.38 0.09 48;
+    --primary-foreground: 0.97 0.01 80;
+
+    /* Secondary: pastel golden-yellow */
+    --secondary: 0.93 0.08 90;
+    --secondary-foreground: 0.30 0.07 50;
+
+    /* Muted: soft warm grey */
+    --muted: 0.94 0.015 75;
+    --muted-foreground: 0.50 0.04 55;
+
+    /* Accent: warm amber/golden */
+    --accent: 0.82 0.12 85;
+    --accent-foreground: 0.25 0.06 50;
+
+    /* Destructive */
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+
+    /* Borders & inputs */
+    --border: 0.87 0.04 75;
+    --input: 0.90 0.03 78;
+    --ring: 0.52 0.09 52;
+
+    /* Charts */
+    --chart-1: 0.62 0.14 48;
+    --chart-2: 0.72 0.12 85;
+    --chart-3: 0.55 0.10 50;
+    --chart-4: 0.80 0.15 75;
+    --chart-5: 0.45 0.08 40;
+
+    /* Sidebar */
+    --sidebar: 0.96 0.015 80;
+    --sidebar-foreground: 0.22 0.04 55;
+    --sidebar-primary: 0.38 0.09 48;
+    --sidebar-primary-foreground: 0.97 0.01 80;
+    --sidebar-accent: 0.93 0.08 90;
+    --sidebar-accent-foreground: 0.30 0.07 50;
+    --sidebar-border: 0.87 0.04 75;
+    --sidebar-ring: 0.52 0.09 52;
+
+    /* Custom bakery tokens */
+    --brown-dark: 0.30 0.09 45;
+    --brown-mid: 0.42 0.10 48;
+    --brown-light: 0.62 0.10 52;
+    --golden: 0.78 0.16 88;
+    --cream-warm: 0.97 0.015 85;
+    --cream-deep: 0.94 0.025 82;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Crimson Pro', Georgia, 'Times New Roman', serif;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+  .font-body {
+    font-family: 'Crimson Pro', Georgia, serif;
+  }
+  .font-sans-ui {
+    font-family: 'General Sans', 'Segoe UI', system-ui, sans-serif;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: oklch(var(--cream-deep));
+}
+::-webkit-scrollbar-thumb {
+  background: oklch(var(--brown-light));
+  border-radius: 3px;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus visible rings */
+:focus-visible {
+  outline: 2px solid oklch(var(--ring));
+  outline-offset: 2px;
+}
