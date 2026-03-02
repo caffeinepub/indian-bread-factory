@@ -44,9 +44,9 @@ export default function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
             <img
-              src="/assets/generated/bakery-logo-transparent.dim_300x300.png"
+              src="/assets/uploads/WhatsApp-Image-2026-03-02-at-12.29.48-1-1.jpeg"
               alt="The Indian Bread Factory Logo"
-              className="w-10 h-10 md:w-12 md:h-12 object-contain group-hover:scale-105 transition-transform"
+              className="w-10 h-10 md:w-12 md:h-12 object-cover rounded-full group-hover:scale-105 transition-transform"
             />
             <div className="flex flex-col">
               <span className="font-display text-sm md:text-base font-bold text-brown-dark leading-tight">

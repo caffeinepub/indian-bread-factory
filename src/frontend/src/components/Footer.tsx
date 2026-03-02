@@ -14,9 +14,9 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
               <img
-                src="/assets/generated/bakery-logo-transparent.dim_300x300.png"
+                src="/assets/uploads/WhatsApp-Image-2026-03-02-at-12.29.48-1-1.jpeg"
                 alt="Logo"
-                className="w-10 h-10 object-contain opacity-90"
+                className="w-10 h-10 object-cover rounded-full opacity-90"
               />
               <div>
                 <p className="font-display font-bold text-primary-foreground text-sm leading-tight">
